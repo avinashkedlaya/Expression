@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;com.iiitb.expr&apos; to &apos;expression&apos;&#x0D;&#x0A;- Original project: &apos;expressions&apos;&#x0D;&#x0A;- Original element: &apos;expressions/src/com.iiitb.expr&apos;&#x0D;&#x0A;- Renamed element: &apos;expressions/src/expression&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;com.iiitb.expr&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;com.iiitb.expr" name="expression" qualified="false" references="true" stamp="1422697977846" textual="false" version="1.0"/>
+</session>
