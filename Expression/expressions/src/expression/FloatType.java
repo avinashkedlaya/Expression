@@ -1,6 +1,6 @@
 package expression;
 
-public class FloatType extends TypeValue {
+public class FloatType extends Type {
 	
 
 	

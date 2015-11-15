@@ -1,6 +1,6 @@
 package expression;
 
-public class BooleanType extends TypeValue {
+public class BooleanType extends Type {
 	
 
 	private static BooleanType getInstance=null;

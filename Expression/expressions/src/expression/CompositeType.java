@@ -4,10 +4,10 @@ package expression;
 import java.util.HashMap;
 import java.util.Map;
 
-public class CompositeType extends TypeValue{
+public class CompositeType extends Type{
 
-	public Map <String, TypeValue> fields=new HashMap<String, TypeValue>();
-	public void addCompositeFields(String fieldsName,TypeValue t){
+	public Map <String, Type> fields=new HashMap<String, Type>();
+	public void addCompositeFields(String fieldsName,Type t){
 		fields.put(fieldsName, t);
 		
 	}

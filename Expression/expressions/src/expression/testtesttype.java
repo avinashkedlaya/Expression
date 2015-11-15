@@ -7,13 +7,13 @@ public class testtesttype {
 		t.addCompositeFields("day", IntegerType.getInstance());
 		t.addCompositeFields("month",IntegerType.getInstance());
 		t.addCompositeFields("year", IntegerType.getInstance());
-		TypeValue.addType("STARTDATE", t);
+		Type.addType("STARTDATE", t);
 		t.addCompositeFields("day", IntegerType.getInstance());
 		t.addCompositeFields("month",IntegerType.getInstance());
 		t.addCompositeFields("year", IntegerType.getInstance());
-		TypeValue.addType("ENDDATE", t);
+		Type.addType("ENDDATE", t);
 	
-		TypeValue type=TypeValue.getInstance();
+		System.out.println(Type.hasType("STARTDAT"));
 
 		
 		

@@ -10,6 +10,7 @@ public abstract class Expression implements IExpression {
 	public Expression(IProgram program, String type) throws Exception {
 		this.mProgram = program;
 		this.mType = type;
+		
 		if(!Type.hasType(type)) {
 			Exception e = new Exception("Expression : Type " + type + " not found.");
 			throw e;

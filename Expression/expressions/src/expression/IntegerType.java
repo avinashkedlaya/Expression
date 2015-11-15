@@ -1,6 +1,6 @@
 package expression;
 
-public class IntegerType extends TypeValue {
+public class IntegerType extends Type {
 	
 
 	private static IntegerType getInstance=null;
