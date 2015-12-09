@@ -1,14 +1,14 @@
 package expression;
 
-public class FloatType extends Type {
+public class FloatType extends AtomicType {
 	
 
 	
 
-	private static FloatType getInstance=null;
+	private static FloatType getInstance=new FloatType();
 	private FloatType()
 	{
-		getInstance=new FloatType();
+		
 	}
 	public static String getType() {
 		return FLOAT;
@@ -16,5 +16,12 @@ public class FloatType extends Type {
 	public static FloatType getInstance() {
 		
 		return getInstance;
+	}
+	public boolean typecheck(IValue v){
+		if(getInstance==v.getType())
+		{
+			return true;
+	}
+		return false;
 	}
 }

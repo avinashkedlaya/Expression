@@ -3,6 +3,7 @@ package expression;
 
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.Map;
 import java.util.Set;
 
@@ -37,6 +38,21 @@ public class Type{
 
 		return mType;
 	}
-	
 
+	public static Iterator<Type> getAllTypes() {
+		return mTypes.values().iterator();
+
+	}
+
+	public static String getTypeName(Type value)
+	{
+		for (String o : mTypes.keySet()) {
+			if (mTypes.get(o).equals(value)) {
+				return o;
+			}
+		}
+		return "not present";
+
+
+	}
 }

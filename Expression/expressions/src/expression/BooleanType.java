@@ -1,12 +1,12 @@
 package expression;
 
-public class BooleanType extends Type {
+public class BooleanType extends AtomicType {
 	
 
-	private static BooleanType getInstance=null;
+	private static BooleanType getInstance=new BooleanType();
 	private BooleanType()
 	{
-		getInstance=new BooleanType();
+		
 	}
 	public static String getType() {
 		return BOOLEAN;
@@ -15,5 +15,11 @@ public class BooleanType extends Type {
 		
 		return getInstance;
 	}
-
+	public boolean typecheck(IValue v){
+		if(getInstance==v.getType())
+		{
+			return true;
+	}
+		return false;
+	}
 }
